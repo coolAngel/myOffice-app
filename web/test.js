@@ -1,0 +1,18 @@
+export default App = {
+  doStaff() {
+    console.log('i am trying hard...')
+  }
+}
+
+
+export function getUsefulContents(url, callback) {
+  getJSON(url, data => callback(JSON.parse(data)));
+}
+
+
+function getJSON(url, callback) {
+  let xhr = new XMLHttpRequest();
+  xhr.onload = function () { callback(this.responseText) };
+  xhr.open('GET', url, true);
+  xhr.send();
+}

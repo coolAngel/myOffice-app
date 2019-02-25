@@ -1,0 +1,24 @@
+{
+  
+  "productName": "myOffice",
+  "appId": "gr.coollab.myoffice",
+  "copyright": "Copyright © 2019 coolLab",
+  "protocols": [
+    { "name": "app", "schemes": ["app"] }
+  ],
+  
+  "win": {
+    "target": [
+      { "target": "nsis", "arch": [ "x64" ] }
+    ]
+  },
+  
+  "nsis": { "oneClick": false },
+  "generateUpdatesFilesForAllChannels": true,
+  "publish": [
+    {
+      "provider": "github",
+      "releaseType": "release" 
+    }
+  ]
+}
