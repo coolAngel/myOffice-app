@@ -55,8 +55,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
-electron-builder.env
+*.env
+!*.env-default
 
 # next.js build output
 .next
