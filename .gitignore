@@ -56,6 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+electron-builder.env
 
 # next.js build output
 .next
+
+# Electron dist folder
+dist/
